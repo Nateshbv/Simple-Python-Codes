@@ -6,48 +6,54 @@ shift= 5
 # Function for the Encryption with linear shift or subsitituion 
 
 def Encrypt(text):
-    encoded=''
+    encoded = ''
     for c in text:
         if c.islower():
-            c_uni=ord(c)
-            c_ind= ord(c)-ord('a')
+  # Check for the lower Case Letters and perform the shift operation      
+
+            c_uni = ord(c)
+            c_ind = ord(c)-ord('a')
             
             new_ind = (c_ind + shift)%26
             new_uni = new_ind + ord('a')
             new_character = chr(new_uni)
-            encoded+= new_character
+            encoded += new_character
+  # Check for the Upper Case Letters and perform the shift operation      
+          
         else:
-            c_uni=ord(c)
-            c_ind= ord(c)-ord('A')
+            c_uni = ord(c)
+            c_ind = ord(c)-ord('A')
             
             new_ind = (c_ind + shift)%26
             new_uni = new_ind + ord('A')
             new_character = chr(new_uni)
-            encoded+= new_character
+            encoded += new_character
     
     return encoded
 
 # Function for the Decryption with Linear shift/Substitution 
 def Decrypt(encoded):
-    Original= ""
+    Original = ""
     for c in encoded:
+# Check for the Upper Case Letters and perform the reverse shift operation      
+
         if c.islower():
-            c_uni=ord(c)
-            c_ind= ord(c)-ord('a')
+            c_uni = ord(c)
+            c_ind = ord(c)-ord('a')
             
             new_ind = (c_ind - shift) % 26
             new_uni = new_ind + ord('a')
             new_char = chr(new_uni)
-            Original+= new_char
-#        Check for the Upper Case Letters and perform the reverse shift operation      
+            Original += new_char
+# Check for the Upper Case Letters and perform the reverse shift operation      
         else:
-            c_uni=ord(c)
-            c_ind= ord(c)-ord('A')
+            c_uni = ord(c)
+            c_ind = ord(c)-ord('A')
             
             new_ind = (c_ind - shift)%26
             new_uni = new_ind + ord('A')
             new_char = chr(new_uni)
-            Original+= new_char
+            Original += new_char
     
     return Original
         
