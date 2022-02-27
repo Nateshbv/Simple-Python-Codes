@@ -5,6 +5,7 @@ Here list of Python codes are given for general Problems.
 2. Bubble Sort 
 3. Simple Calculator 
 4. Convert text (Encryption and Decryption using linear substitution)
-5. Graph using Dictionaries and prints all paths with shortest
-6. Random Password Generator (8 Characters fixed length)
-7. Rock, Paper, Scissor Game 
+5. Cricket Quiz
+6. Graph using Dictionaries and prints all paths with shortest
+7. Random Password Generator (8 Characters fixed length)
+8. Rock, Paper, Scissor Game 
