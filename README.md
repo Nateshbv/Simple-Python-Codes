@@ -8,6 +8,6 @@ Here list of Python codes are given for general Problems.
 5. Cricket Quiz
 6. Graph using Dictionaries and prints all paths with shortest
 7. Insert into a sorted list using linked list
-8. 
+8. Knapsack problem/Dynamic programming
 9. Random Password Generator (8 Characters fixed length)
 10. Rock, Paper, Scissor Game 
