@@ -11,3 +11,4 @@ Here list of Python codes are given for general Problems.
 8. Knapsack problem/Dynamic programming
 9. Random Password Generator (8 Characters fixed length)
 10. Rock, Paper, Scissor Game 
+11. LCS Substring and Length of the substring 
